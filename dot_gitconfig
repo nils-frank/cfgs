@@ -1,0 +1,23 @@
+[user]
+	name = Nils Frank
+	email = nils.frank.21@gmail.com
+[core]
+	editor = vim
+[merge]
+    tool = meld
+[mergetool "meld"]
+    # Choose one of these 2 lines (not both!) explained below.
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[commit]
+	template = /home/nfrank/.gitcommittemplate.txt

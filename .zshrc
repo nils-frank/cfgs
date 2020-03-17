@@ -7,7 +7,10 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="amuse"
+ZSH_THEME="nils"
+#ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,9 +93,44 @@ alias gf="git fetch"
 alias gp="git push"
 
 # Remote Connections
-alias pi="ssh pi@192.168.178.52"
+alias pi="ssh pi@192.168.178.34"
+alias hp="ssh u82447762@home594395612.1and1-data.host"
+alias aqs_remote="ssh root@mi.ffw-muenchen.de -p 11122"
+alias aqs="ssh root@192.168.42.212"
 
 # Allgemeine Alias
+alias cpf="xclip -sel c <"
 alias pdf="evince"
 alias lo="libreoffice"
 alias vl="cd ~/Documents/Uni"
+alias esr="cd ~/work/esrlabs"
+alias resize="gsettings set org.gnome.desktop.interface text-scaling-factor"
+alias open="google-chrome"
+alias rm="rm -i"
+alias vpn="protonvpn"
+
+export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"
+export IDF_PATH=~/esp/esp-idf
+
+# ssh ESR first pi
+alias pi1="ssh pi@172.31.2.168"
+
+# added by Anaconda3 installer
+# export PATH="/home/nfrank/anaconda3/bin:$PATH"  # commented out by conda initialize
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/nfrank/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/nfrank/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/nfrank/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/nfrank/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -1,0 +1,25 @@
+let mapleader = ","
+inoremap jk <Esc>
+set clipboard+=unnamed
+
+" === Extentsion ==
+set surround
+
+" === Mappings ===
+map <leader><r> :action RenameElement<CR>
+map <leader><f> :action ReformatCode<CR>
+map <leader><F> :action Find<CR>
+map <leader><g> :action FindUsages<CR>
+map <leader><O> :action ActivateStructureToolWindow<CR>
+map <leader><o> :action FileStructurePopup<CR>
+map <leader><j> :action GotoNextError<CR>
+map <leader><k> :action GotoPreviousError<CR>
+map <leader><c> :action GotoClass<CR>
+map <leader><s> :action GotoSymbol<CR>
+map <leader><p> :action GotoFile<CR>
+map <leader><w> :action EditorToggleShowWhitespaces<CR>
+map <leader><R> :action Run<CR>
+map <leader><D> :action Debug<CR>
+map <leader><v> :action Paste<CR>
+nnoremap <leader>W ysiwsssCR>
+
